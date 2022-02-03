@@ -79,7 +79,7 @@ Design Patterns
 | Continuous Assessments                                       | Weightage (60%) |
 | ------------------------------------------------------------ | --------------- |
 | Practical Assessment 1                                       | 15              |
-| Practical Assessment 1                                       | 20              |
+| Practical Assessment 2                                       | 20              |
 | Individual Project                                           | 10              |
 | Weekly Labs                                                  | 10              |
 | Class Participation and Peer Learning Activities ([github issues/wiki](https://github.com/nus-cs2030/2122-s2)) | 5               |

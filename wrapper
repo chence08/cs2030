@@ -2,10 +2,30 @@
 
 set timeout 20
 
-set cmd [lrange $argv 1 end]
-set password [lindex $argv 0]
+set password1 [lindex $argv 0]
+set password2 [lindex $argv 1]
+set jump [lindex $argv 2]
+set host [lindex $argv 3]
+set flag [lindex $argv 4]
+set srcPath [lindex $argv 5]
+set destPath [lindex $argv 6]
 
-eval spawn $cmd
-expect "assword:"
-send "$password\r";
+set cmd ""
+
+if {[string length $flag] == 0} {
+	append cmd "ssh -J $jump $host"
+} else {
+	append cmd "scp -o ProxyJump=$jump "
+	if {$flag == "-d"} {
+		append cmd "$host:$srcPath $destPath"
+	} elseif {$flag == "-u"} {
+		append cmd "$srcPath $host:$destPath"
+	}
+}
+
+eval spawn $cmd;
+expect "assword:";
+send "$password1\r";
+expect "assword:";
+send "$password2\r";
 interact
