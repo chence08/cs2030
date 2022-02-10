@@ -147,7 +147,7 @@ Prerequisite: [expect](https://core.tcl-lang.org/expect/index) (this should be p
 3. Usage
 
    ```bash
-   <path to wrapper>/wrapper <stu password> <plab password> ssh -J <stu server> <plab server>
+   <path to wrapper>/wrapper <stu password> <plab password> <stu server> <plab server>
    ```
    
 4. Create alias in `~/.bashrc` or `~/.zshrc` file
@@ -155,6 +155,8 @@ Prerequisite: [expect](https://core.tcl-lang.org/expect/index) (this should be p
    ```bash
    alias plab="./wrapper pass1 pass2 e1234567@stu.comp.nus.edu.sg plab1234@123.456.78.900"
    ```
+   
+   > Use absolute path to wrapper instead of `./`
    
 5. Restart terminal or `source` your configuration file.
 
