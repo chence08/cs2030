@@ -34,7 +34,7 @@ slide-transition: true
 - The project has been released on CodeCrunch
 - The entire project is worth 10% of your grade
 - Same as previous labs, submit your files onto CodeCrunch! 
-- **Style and design is graded!** You will need to write [Javadocs](https://nus-cs2030s.github.io/2122-s2/javadoc.html) for public methods
+- **Style and design is graded!** ~~You will need to write [Javadocs](https://nus-cs2030s.github.io/2122-s2/javadoc.html) for public methods~~
 - More levels to come :)
 
 ------
