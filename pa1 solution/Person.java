@@ -14,10 +14,7 @@ class Person {
     @Override
     public String toString() {
         String result = String.format("%s/%s/", id, status);
-        if (isHighRisk()) {
-        return result + "^";
-        }
-        return result + "v";
+        return result + (isHighRisk() ? "^" : "v");
     }
 
     boolean isVaccinated() {
