@@ -1,0 +1,5 @@
+new Module("CS2040").put(new Assessment("Lab1", "B")).get("Lab1")
+new Module("CS2040").put(new Assessment("Lab1", "B")).get("Lab1").map(x -> x.getGrade())
+new Student("Tony").put(new Module("CS2040").put(new Assessment("Lab1", "B"))).get("CS2040" ).map(x -> x.get("Lab1"))
+new Student("Tony").put(new Module("CS2040").put(new Assessment("Lab1", "B"))).get("CS2040" ).flatMap(x -> x.get("Lab1"))
+new Student("Tony").put(new Module("CS2040").put(new Assessment("Lab1", "B"))).get("CS2040" ).flatMap(x -> x.get("Lab1")).map(Assessment::getGrade)
