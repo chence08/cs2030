@@ -199,7 +199,7 @@ Texas Oklahoma Indiana Georgia
 - Generic types must be reference types. You cannot replace a generic type with a primitive type such as `int`, `double`, or `char`. For example the following statement is wrong
 
 	```java
-	ArrayList<int> intList new ArrayList<>();
+	ArrayList<int> intList = new ArrayList<>();
 	```
 
 ------
