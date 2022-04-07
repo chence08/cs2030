@@ -30,8 +30,4 @@ class Candle implements Thing {
     public Thing update() {
         return new Candle(currState + 1);
     }
-
-    int getState() {
-        return currState;
-    }
 }

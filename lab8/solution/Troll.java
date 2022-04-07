@@ -31,8 +31,4 @@ class Troll implements Thing {
     public Thing update() {
         return new Troll(currState + 1);
     }
-
-    int getState() {
-        return currState;
-    }
 }
