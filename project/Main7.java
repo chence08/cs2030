@@ -34,5 +34,8 @@ class Main7 {
 
         Simulate7 sim = new Simulate7(numOfServers, inputTimes, qmax, restTimes);
         System.out.println(sim.run());
+        // for (int i = 1; i <= 10; i++) {
+        //     System.out.println(String.format("%2d %f", i, restTimes.get()));
+        // }
     }
 }
