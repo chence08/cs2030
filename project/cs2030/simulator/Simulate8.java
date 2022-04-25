@@ -43,11 +43,10 @@ public class Simulate8 {
                 .boxed()
                 .map(ID -> new Server(ID, qmax))
                 .collect(Collectors.toList());
-        int firstSelfCheckID = numOfServers + 1;
         List<SelfCheck> selfCheckCounters = IntStream
                 .rangeClosed(numOfServers + 1, numOfServers + numOfSelfChecks)
                 .boxed()
-                .map(ID -> new SelfCheck(ID, qmax, firstSelfCheckID))
+                .map(ID -> new SelfCheck(ID, qmax))
                 .collect(Collectors.toList());
         Shop shop = new Shop(ImList.of(serverList), ImList.of(selfCheckCounters));
         PQ<Event> events = new PQ<>(new EventComparator());
