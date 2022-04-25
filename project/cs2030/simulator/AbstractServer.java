@@ -38,8 +38,6 @@ abstract class AbstractServer {
     abstract AbstractServer serveWaitingCustomer(double eventTime);
 
     // Getters
-    abstract String getType();
-
     Customer getLastServed() {
         return servedCustomers.get(servedCustomers.size() - 1);
     }

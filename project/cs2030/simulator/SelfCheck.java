@@ -29,11 +29,6 @@ public class SelfCheck extends AbstractServer {
     }
 
     @Override
-    String getType() {
-        return "SelfCheck";
-    }
-
-    @Override
     SelfCheck serve(Customer customer) {
         return new SelfCheck(serverID, false, servedCustomers.add(customer),
             waitingCustomers, totalWaitTime, qmax, false);

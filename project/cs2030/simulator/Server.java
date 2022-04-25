@@ -58,9 +58,4 @@ public class Server extends AbstractServer {
         return new Server(serverID, isDone, servedCustomers, waitingCustomers,
             totalWaitTime, qmax, isDone);
     }
-
-    @Override
-    String getType() {
-        return "Server";
-    }
 }
